@@ -1,0 +1,10 @@
+// this is our root reducer where we combine all reducers
+import { combineReducers } from 'redux';
+// import authReducer from './authReducer' // just one of our reducers
+import errorReducer from './errorReducer';
+// import profileReducer from './profileReducer'
+// import postReducer from './postReducer'
+
+export default combineReducers({ // we combine all reducers with a name we've chosen for them and export them.
+  errors: errorReducer
+});
