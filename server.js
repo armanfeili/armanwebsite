@@ -10,6 +10,7 @@ const abilities = require('./routes/api/abilities');
 const db = require('./config/keys').mongoURI;
 
 mongoose.connect(db, { useNewUrlParser: true }).then(() => console.log('MongoDB connected.')).catch((err) => console.log(err));
+console.log(db);
 
 const port = process.env.PORT || 5000;
 
