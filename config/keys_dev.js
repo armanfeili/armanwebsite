@@ -16,10 +16,15 @@
 // mongodb://arman756:arman756@devConnectorCluster-shard-00-00-6xumt.mongodb.net:27017,devConnectorCluster-shard-00-01-6xumt.mongodb.net:27017,devConnectorCluster-shard-00-02-6xumt.mongodb.net:27017/test?ssl=true&replicaSet=devConnectorCluster-shard-0&authSource=admin&retryWrites=true
 
 // for mlab:
+// module.exports = {
+//   mongoURI: 'mongodb://armanpersonalwebpage:arbamlab756@ds119085.mlab.com:19085/armanpersonalwebpage',
+//   secretOrKey: 'someSecret'
+// }
 module.exports = {
-  mongoURI: 'mongodb://armanpersonalwebpage:arbamlab756@ds119085.mlab.com:19085/armanpersonalwebpage',
+  mongoURI: 'mongodb://arman756:arman756@devConnectorCluster-shard-00-00-6xumt.mongodb.net:27017,devConnectorCluster-shard-00-01-6xumt.mongodb.net:27017,devConnectorCluster-shard-00-02-6xumt.mongodb.net:27017/test?ssl=true&replicaSet=devConnectorCluster-shard-0&authSource=admin&retryWrites=true',
   secretOrKey: 'someSecret'
 };
+// mongodb://<dbuser>:<dbpassword>@ds119085.mlab.com:19085/armanpersonalwebpage
 // mongodb://<dbuser>:<dbpassword>@ds119085.mlab.com:19085/armanpersonalwebpage
 // Make sure you are using the database username and password not the account username and password from Mlab.
 
