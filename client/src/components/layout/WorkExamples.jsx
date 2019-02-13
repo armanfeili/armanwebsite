@@ -18,7 +18,7 @@ class WorkExamples extends Component {
         <div className="row js--wp-3 workContainer">
           <div className="col span-1-of-4 box workPartContainer">
             <a
-              href={`https://shielded-harbor-46217.herokuapp.com/`}
+              href={`https://arman-devconnector.herokuapp.com/`}
               target="_blank"
             >
               <img
@@ -35,7 +35,7 @@ class WorkExamples extends Component {
           </div>
           <div className="col span-1-of-4 box workPartContainer">
             <a
-              href={`https://shielded-harbor-46217.herokuapp.com/`}
+              href={`https://arman-devconnector.herokuapp.com/`}
               target="_blank"
             >
               <img src={Recipe} alt="Recipe" className="workImageContainer" />
