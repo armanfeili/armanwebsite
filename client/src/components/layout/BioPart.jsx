@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import farmVideo from "../../style/resources/img/farm.mp4";
+import farmVideo from "../../style/resources/img/farm3.mp4";
 
 // for creating autoplay muted loop video in background, we should use normal <video> tag
 // containing <source /> tags with closing tag. also we should use autoPlay instead of autoplay
