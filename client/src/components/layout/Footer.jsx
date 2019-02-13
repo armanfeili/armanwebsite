@@ -9,7 +9,7 @@ class Skills extends Component {
     return (
       <footer className="" id="footer">
         <div className="row js--wp-3 footerIconBar">
-          <div className="col span-1-of-3 box">
+          <div className=" box social-icon">
             <a
               href="https://www.instagram.com/arman_feili/"
               target="_blank"
@@ -18,7 +18,7 @@ class Skills extends Component {
               <FaInstagram className="icon-big footerIcon" />
             </a>
           </div>
-          <div className="col span-1-of-3 box">
+          <div className=" box social-icon">
             <a
               href="https://www.linkedin.com/in/arman-feili-89b622132/"
               target="_blank"
@@ -27,7 +27,7 @@ class Skills extends Component {
               <FaLinkedin className="icon-big footerIcon" />
             </a>
           </div>
-          <div className="col span-1-of-3 box">
+          <div className=" box social-icon">
             <a
               href="https://github.com/arman756"
               target="_blank"

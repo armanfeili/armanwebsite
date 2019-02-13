@@ -202,7 +202,7 @@ p {
 
 .fullscreen-bg__video {
   left: 0;
-
+  display:block;
   width: 106%;
   height: auto;
   position: absolute;
@@ -635,7 +635,7 @@ input[type="submit"] {
   /* top: 0; */
   left: 0;
   width: 100%;
-  height: 55px;
+  height: auto;
   background: linear-gradient(to right, #e53935, #e35d5b);
   border-bottom: 2px solid rgb(255, 217, 0);
   box-shadow: 0 1px 10px rgb(65, 65, 65);
@@ -678,7 +678,7 @@ input[type="submit"] {
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
   padding: 8px;
-  padding-bottom: 13px;
+  padding-bottom: 11px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -773,10 +773,11 @@ input[type="submit"] {
 /* Mobile navi */
 
 .mobile-nav-icon {
-  float: right;
-  margin-top: 30px;
-  cursor: pointer;
-  display: none;
+    float: right;
+    margin-top: 40px;
+    cursor: pointer;
+    display: none;
+    width: 25px;
 }
 
 .mobile-nav-icon i {
@@ -1644,15 +1645,13 @@ textarea {
           WORK EXAMPLES
 ********************************/
 .workContainer {
-  height: 47vh;
+  height: auto;
   width: 100%;
 }
 
 .workPartContainer {
-  width: 23%;
-  float: left;
-  position: relative;
-  height: 100%;
+    position: relative;
+    padding-bottom: 15px;
 }
 
 .workImageContainer {
@@ -1685,9 +1684,15 @@ footer {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: auto;
 }
+.social-icon{
+    float: left;
+    width: 32%;
+}
 
 .footerIconBar {
-  width: 20%;
+    width: 20%;
+    height: 80px;
+    padding-left: 10px;
 }
 
 .footerIcon {

@@ -5,14 +5,20 @@ import $ from "jquery";
 
 import Waypoint from "react-waypoint";
 
+import { FaListUl } from "react-icons/fa";
+
 import whiteLogo from "../../style/resources/img/Arman-logo-white.png";
 import blackLogo from "../../style/resources/img/Arman-logo-black.png";
 class Navbar extends Component {
   constructor() {
     super();
+    this.state={
+      open: false
+    }
 
     this.stickyNavbar = this.stickyNavbar.bind(this);
     this.scroolSoft = this.scroolSoft.bind(this);
+    this.mobileNav = this.mobileNav.bind(this);
   }
 
   stickyNavbar() {
@@ -26,6 +32,35 @@ class Navbar extends Component {
     } else {
       header.classList.remove("sticky");
     }
+  }
+
+  mobileNav(e){
+
+    let list = document.getElementById('list');
+    let nav = $('.js--main-nav');
+    nav.slideToggle(200);
+
+    if (this.state.open===false) {
+      this.setState({ open:true })
+    } else {
+      this.setState({ open:false })
+    }
+
+    // /* Mobile navigation */
+    // $('.js--nav-icon').click(function () {
+    //   var nav = $('.js--main-nav');
+    //   var icon = $('.js--nav-icon i');
+
+    //   nav.slideToggle(200);
+
+    //   if (icon.hasClass('ion-navicon-round')) {
+    //     icon.addClass('ion-close-round');
+    //     icon.removeClass('ion-navicon-round');
+    //   } else {
+    //     icon.addClass('ion-navicon-round');
+    //     icon.removeClass('ion-close-round');
+    //   }
+    // });
   }
 
   scroolSoft() {
@@ -67,6 +102,9 @@ class Navbar extends Component {
                 <img src={whiteLogo} alt="Arman-Logo" className="logo" />
                 <img src={blackLogo} alt="Arman-Logo" className="logo-sticky" />
               </a>
+              <a className="mobile-nav-icon js--nav-icon" onClick={this.mobileNav} id="list">
+                    <FaListUl className="icon-big" />
+              </a>
               <ul className="main-nav js--main-nav">
                 <li>
                   <a href="#home" className="active">
@@ -83,9 +121,8 @@ class Navbar extends Component {
                   <a href="#footer">Contact</a>
                 </li>
               </ul>
-              {/* <a className="mobile-nav-icon js--nav-icon">
-              <i className="ion-social-buffer-outline" />
-            </a> */}
+              
+            
             </div>
           </div>
           <Waypoint
