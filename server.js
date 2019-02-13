@@ -18,10 +18,14 @@ app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-
 app.use(bodyParser.json()); // parse application/json -> parse the code from json code
 
 // User routes
-app.use('/', abilities);
+// app.use('/', abilities);
 
 // Server static assets if in production
+console.log(process.env.NODE_ENV);
+
 if (process.env.NODE_ENV === 'production') {
+  console.log(db);
+  
   // Set static folder
   app.use(express.static('client/build'));
   // creating our route
@@ -32,6 +36,9 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
+//  if (process.env.NODE_ENV !== 'production') {
+//    console.log('Looks like we are in development mode!');
+// }
 
 app.listen(port, () => {
   console.log(`server running on port ${port}`);
