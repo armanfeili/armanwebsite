@@ -135,6 +135,7 @@
   }
   .main-nav li {
     display: block;
+    margin-bottom: -14px;
   }
   .main-nav li a:link,
   .main-nav li a:visited {
@@ -145,7 +146,7 @@
   }
   .sticky .main-nav {  
     margin-top: 6px;
-    padding-bottom: 11px;
+    padding-bottom: 25px;
     width: 45%;
   }
   .sticky .main-nav li a:link,
