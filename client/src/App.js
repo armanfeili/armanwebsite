@@ -23,7 +23,7 @@ import Footer from './components/layout/Footer';
 import './App.css';
 import './style/vendors/css/animate.css';
 import './style/vendors/css/grid.css';
-import './style/vendors/css/ionicons.min.css';
+// import './style/vendors/css/ionicons.min.css';
 import './style/vendors/css/normalize.css';
 import './style/resources/css/quaries.css';
 import './style/resources/css/style.css';
