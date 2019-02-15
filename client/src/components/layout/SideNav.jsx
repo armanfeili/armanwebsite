@@ -52,7 +52,7 @@ class Navbar extends Component {
       <div className="iconBar">
         {/* <audio id="audio" src={song} /> */}
         {/* <ReactAudioPlayer src={song} autoPlay controls /> */}
-        <audio id="audio">
+        <audio id="audio" autoPlay>
           <source id="song-1" src={song} type="audio/ogg" />
           <source id="song-1" src={song} type="audio/mp3" />
 
