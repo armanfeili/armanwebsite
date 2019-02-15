@@ -35,7 +35,7 @@ class WorkExamples extends Component {
           </div>
           <div className="col span-1-of-4 box workPartContainer">
             <a
-              href={`https://arman-devconnector.herokuapp.com/`}
+              href={`https://arman-food-recipe.herokuapp.com/`}
               target="_blank"
             >
               <img src={Recipe} alt="Recipe" className="workImageContainer" />
