@@ -8,12 +8,9 @@ class BioButton extends Component {
   render() {
     return (
       <section id="about" className=" bioPart">
-        <video
-          id="background-video"
-          className="fullscreen-bg__video"
-          loop
-          autoPlay
-        >
+        
+        <video loop muted autoPlay id="background-video" className="fullscreen-bg__video">
+          <source src={farmVideo} type="video/webm" />
           <source src={farmVideo} type="video/mp4" />
           <source src={farmVideo} type="video/ogg" />
           Your browser does not support the video tag.
