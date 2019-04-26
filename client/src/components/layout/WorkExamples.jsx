@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import DevConnector from "../../style/resources/img/DevConnector.png";
 import Recipe from "../../style/resources/img/Recipe.png";
+import LinkReducer from "../../style/resources/img/LinkReducer.png";
 import ComingSoon from "../../style/resources/img/ComingSoon.png";
 
 class WorkExamples extends Component {
@@ -47,13 +48,15 @@ class WorkExamples extends Component {
             </p>
           </div>
           <div className="col span-1-of-4 box workPartContainer">
-            <img
-              src={ComingSoon}
-              alt="ComingSoon"
-              className="workImageContainer"
-            />
-            <h3 className="workImageTitle">Coming Soon</h3>
-            <p>...</p>
+            <a href={`https://link-reducer.herokuapp.com/`} target="_blank">
+              <img
+                src={LinkReducer}
+                alt="LinkReducer"
+                className="workImageContainer"
+              />
+              <h3 className="workImageTitle">Link Reducer</h3>
+            </a>
+            <p>For reducing links.</p>
           </div>
           <div className="col span-1-of-4 box workPartContainer">
             <img
